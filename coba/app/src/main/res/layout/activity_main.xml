@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Lbl_Nama"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:backgroundTintMode="add"
+        android:text="Aplikasi Mobile"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/TxtNama"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_below="@+id/Lbl_Nama"
+        android:layout_marginTop="57dp"
+        android:hint="masukkan nama"
+        android:inputType="none" />
+
+    <Button
+        android:id="@+id/BtnTampil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtNama"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#EF0606"
+        android:onClick="TampilNama"
+        android:text="Tampilkan " />
+
+    <TextView
+        android:id="@+id/Label2"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@+id/BtnTampil"
+        android:layout_marginTop="54dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
